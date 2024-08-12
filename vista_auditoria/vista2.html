@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modulo de Auditorías</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <div class="header-content"><img src="/vista_auditoria/header.PNG"></div>
+     
+        <nav class="vistas">
+
+            <a href="/vista_auditoria/index.html">volver </a>
+        </nav>
+    </div>
+</header>
+<body>
+  <div class="container">
+
+    <form>
+      <div class="form-group">
+        <label for="titulo">TITULO DE AUDITORIA:</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Ingrese el título" required>
+      </div>
+
+      <div class="form-group">
+        <label for="categoria_proceso">PROCESOS - Categoría del Proceso:</label>
+        <select id="categoria_proceso" name="categoria_proceso" required>
+          <option value="" disabled selected>Seleccione una opción</option>
+          <option value="estrategico">Estrategico</option>
+          <option value="misional">Misional</option>
+          <option value="apoyo">Apoyo</option>
+          <option value="control">Control</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="subproceso">Subproceso:</label>
+        <input type="text" id="subproceso" name="subproceso" placeholder="Ingrese el subproceso">
+      </div>
+
+      <div class="form-group">
+        <label for="lider_auditoria">LIDER DE AUDITORIA:</label>
+        <select id="lider_auditoria" name="lider_auditoria" required>
+          <option value="" disabled selected>Seleccione un usuario  </option>
+          <option value="" disabled selected>Pepito perez</option>
+          <!-- Opciones de usuarios aquí -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="equipo_auditor">EQUIPO AUDITOR:</label>
+        <select id="equipo_auditor" name="equipo_auditor" multiple required>
+          <option value="" disabled>Seleccione usuarios</option>
+          <option value="" disabled selected>Pepito perez</option>
+          <!-- Opciones de usuarios aquí -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fecha_inicio">Fecha de Inicio:</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+      </div>
+
+      <div class="form-group">
+        <label for="fecha_cierre">Fecha de Cierre:</label>
+        <input type="date" id="fecha_cierre" name="fecha_cierre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="responsable_proceso">RESPONSABLE LIDER DEL PROCESO AUDITADO:</label>
+        <select id="responsable_proceso" name="responsable_proceso" required>
+          <option value="" disabled selected>Seleccione un usuario</option>
+          <option value="" disabled selected>Pepito perez</option>
+          <!-- Opciones de usuarios aquí -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="observacion">OBSERVACIÓN:</label>
+        <textarea id="observacion" name="observacion" rows="4" placeholder="Ingrese observaciones"></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Guardar Auditoría</button>
+    </form>
+  </div>
+</body>
+</html>
